@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cocooned – Wrapped in Care, Ready to Flutter</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cocoPrimary: "#5c6ac4", // indigo-ish
+              cocoSecondary: "#ff7d6a", // coral
+              cocoAccent: "#00b8a9", // teal
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="font-sans text-gray-800 bg-gray-50">
+    <!-- ╔══════════════╗-->
+    <!--    NAVBAR      -->
+    <!-- ╚══════════════╝-->
+    <header class="fixed inset-x-0 top-0 z-50 bg-white/70 backdrop-blur-md shadow-sm">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        <a href="#home" class="text-2xl font-bold text-cocoPrimary">
+          Cocooned
+        </a>
+        <nav class="hidden gap-8 md:flex">
+          <a href="#why" class="hover:text-cocoPrimary transition-colors">Why Cocooned</a>
+          <a href="#features" class="hover:text-cocoPrimary transition-colors">Features</a>
+          <a href="#toolkits" class="hover:text-cocoPrimary transition-colors">Toolkits</a>
+          <a href="#pricing" class="hover:text-cocoPrimary transition-colors">Pricing</a>
+          <a href="#impact" class="hover:text-cocoPrimary transition-colors">Impact</a>
+        </nav>
+        <a
+          href="#pricing"
+          class="hidden rounded-lg bg-cocoSecondary px-5 py-2 font-medium text-white shadow-md transition hover:opacity-90 md:inline-block"
+          >Get Premium</a
+        >
+      </div>
+    </header>
+
+    <!-- ╔══════════════╗-->
+    <!--      HERO      -->
+    <!-- ╚══════════════╝-->
+    <section
+      id="home"
+      class="relative flex min-h-screen items-center justify-center overflow-hidden pt-24"
+    >
+      <img
+        src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&q=80"
+        alt="Happy multicultural Singapore family"
+        class="absolute inset-0 -z-10 h-full w-full object-cover opacity-70"
+      />
+      <div class="absolute inset-0 -z-20 bg-gradient-to-tr from-cocoPrimary via-cocoAccent to-cocoSecondary mix-blend-multiply"></div>
+
+      <div class="relative mx-auto max-w-3xl text-center text-white">
+        <h1 class="mb-6 text-4xl font-extrabold sm:text-6xl">
+          Wrapped in Care,<br class="hidden sm:block" /> Ready to Flutter
+        </h1>
+        <p class="mb-8 text-lg sm:text-xl">
+          The modern, evidence‑based parenting companion for Singapore families with
+          children aged 5–12.
+        </p>
+        <a
+          href="#features"
+          class="inline-block rounded-xl bg-white/90 px-8 py-3 text-cocoPrimary font-semibold backdrop-blur-md transition hover:opacity-90"
+          >Explore Cocooned</a
+        >
+      </div>
+    </section>
+
+    <!-- ╔══════════════╗-->
+    <!--  WHY COCOONED  -->
+    <!-- ╚══════════════╝-->
+    <section id="why" class="py-20">
+      <div class="mx-auto max-w-5xl px-6 text-center">
+        <h2 class="text-3xl font-bold text-cocoPrimary">Why Cocooned?</h2>
+        <p class="mt-4 text-gray-600">
+          Singapore parents asked; we listened. Cocooned bridges five critical gaps.
+        </p>
+
+        <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
+          <!-- Card 1: Digital Safety -->
+          <div class="rounded-3xl bg-white p-6 shadow-lg hover:shadow-xl transition">
+            <img
+              src="https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&w=400&q=60"
+              alt="Child learning tablet safely"
+              class="mx-auto mb-4 h-20 w-20 rounded-full object-cover"
+            />
+            <h3 class="mb-2 font-semibold">Digital Safety</h3>
+            <p class="text-sm text-gray-500">
+              Localised screen‑time tools & cyber‑wellness guides.
+            </p>
+          </div>
+
+          <!-- Card 2: Gentle Discipline -->
+          <div class="rounded-3xl bg-white p-6 shadow-lg hover:shadow-xl transition">
+            <img
+              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=400&q=60"
+              alt="Parent guiding child gently"
+              class="mx-auto mb-4 h-20 w-20 rounded-full object-cover"
+            />
+            <h3 class="mb-2 font-semibold">Gentle Discipline</h3>
+            <p class="text-sm text-gray-500">Positive parenting beyond preschool.</p>
+          </div>
+
+          <!-- Card 3: Emotional Coaching -->
+          <div class="rounded-3xl bg-white p-6 shadow-lg hover:shadow-xl transition">
+            <img
+              src="https://images.unsplash.com/photo-1601050698970-365259c064c8?auto=format&fit=crop&w=400&q=60"
+              alt="Mother and daughter talking about feelings"
+              class="mx-auto mb-4 h-20 w-20 rounded-full object-cover"
+            />
+            <h3 class="mb-2 font-semibold">Emotional Coaching</h3>
+            <p class="text-sm text-gray-500">
+              SEL tools & mental‑wellness resources in one app.
+            </p>
+          </div>
+
+          <!-- Card 4: Academic Stress -->
+          <div class="rounded-3xl bg-white p-6 shadow-lg hover:shadow-xl transition">
+            <img
+              src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=400&q=60"
+              alt="Child doing homework happily"
+              class="mx-auto mb-4 h-20 w-20 rounded-full object-cover"
+            />
+            <h3 class="mb-2 font-semibold">Academic Stress</h3>
+            <p class="text-sm text-gray-500">AI‑guided homework & growth mindset tools.</p>
+          </div>
+
+          <!-- Card 5: Healthy Habits -->
+          <div class="rounded-3xl bg-white p-6 shadow-lg hover:shadow-xl transition">
+            <img
+              src="https://images.unsplash.com/photo-1517816428104-583fe0550e1f?auto=format&fit=crop&w=400&q=60"
+              alt="Family playing together outdoors"
+              class="mx-auto mb-4 h-20 w-20 rounded-full object-cover"
+            />
+            <h3 class="mb-2 font-semibold">Healthy Habits</h3>
+            <p class="text-sm text-gray-500">Eat‑Sleep‑Move challenges for the whole family.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ╔══════════════╗-->
+    <!--    FEATURES    -->
+    <!-- ╚══════════════╝-->
+    <section id="features" class="bg-cocoPrimary/5 py-20">
+      <div class="mx-auto max-w-6xl px-6">
+        <h2 class="text-center text-3xl font-bold text-cocoPrimary mb-12">
+          Features at a Glance
+        </h2>
+
+        <div class="grid gap-10 md:grid-cols-2">
+          <!-- Free Tier -->
+          <div class="overflow-hidden rounded-3xl bg-white shadow-lg">
+            <img
+              src="https://images.unsplash.com/photo-1601972599723-74fba7960fa3?auto=format&fit=crop&w=900&q=80"
+              alt="Family using tablet"
+              class="h-56 w-full object-cover"
+            />
+            <div class="p-8">
+              <h3 class="text-2xl font-semibold text-cocoPrimary">Free Tier</h3>
+              <ul class="mt-4 space-y-2 text-gray-600">
+                <li>✅ Daily parenting tips aligned to MOE & HPB</li>
+                <li>✅ Age‑specific development checklists</li>
+                <li>✅ Screen‑time tracker</li>
+                <li>✅ Peer community forums</li>
+                <li>✅ Calendar of free events</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Premium Tier -->
+          <div class="overflow-hidden rounded-3xl bg-white shadow-lg">
+            <img
+              src="https://images.unsplash.com/photo-1511732352744-9534ab65f28d?auto=format&fit=crop&w=900&q=80"
+              alt="Parent coaching online"
+              class="h-56 w-full object-cover"
+            />
+            <div class="p-8">
+              <h3 class="text-2xl font-semibold text-cocoSecondary">Premium</h3>
+              <ul class="mt-4 space-y-2 text-gray-600">
+                <li>🌟 Custom family agreements</li>
+                <li>🌟 Expert webinars & workshops</li>
+                <li>🌟 AI learning coach</li>
+                <li>🌟 Emotion coaching toolkits</li>
+                <li>🌟 1‑on‑1 coaching slots</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ╔══════════════╗-->
+    <!--    TOOLKITS    -->
+    <!-- ╚══════════════╝-->
+    <section id="toolkits" class="py-20">
+      <div class="mx-auto max-w-6xl px-6 text-center">
+        <h2 class="text-3xl font-bold text-cocoPrimary">Toolkit Library</h2>
+        <p class="mt-4 text-gray-600">
+          Download standalone packs or enjoy them with Premium.
+        </p>
+
+        <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- Toolkit Card (existing cards remain unchanged) -->
+          <!-- Card templates already include images -->
+          <!-- ... existing code unchanged ... -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ╔══════════════╗-->
+    <!--     PRICING    -->
+    <!-- ╚══════════════╝-->
+    <section id="pricing" class="bg-cocoAccent/10 py-20">
+      <div class="mx-auto max-w-5xl px-6 text-center">
+        <h2 class="text-3xl font-bold text-cocoPrimary">Simple, Transparent Pricing</h2>
+        <p class="mt-4 text-gray-600">A single plan, packed with value.</p>
+
+        <div
+          class="mx-auto mt-12 max-w-md rounded-3xl border border-cocoAccent bg-white p-10 shadow-lg"
+        >
+          <p class="text-lg font-semibold text-cocoSecondary">Premium</p>
+          <p class="mt-4 text-5xl font-extrabold text-gray-900">
+            S$6.90
+            <span class="text-base font-medium text-gray-600">/ month</span>
+          </p>
+          <p class="mt-2 text-sm text-gray-500">or S$69/year (save 16%)</p>
+          <ul class="mt-6 space-y-2 text-left text-sm text-gray-600">
+            <li>✔ All premium app features</li>
+            <li>✔ Unlimited toolkit downloads</li>
+            <li>✔ Priority coaching slots</li>
+            <li>✔ Early access to new releases</li>
+          </ul>
+          <a
+            href="#"
+            class="mt-8 inline-block w-full rounded-xl bg-cocoSecondary px-6 py-3 font-semibold text-white shadow-md transition hover:opacity-90"
+            >Start 14‑Day Free Trial</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ╔══════════════╗-->
+    <!--    IMPACT & ROADMAP    -->
+    <!-- ╚══════════════╝-->
+    <section id="impact" class="py-20">
+      <div class="mx-auto max-w-6xl px-6 text-center">
+        <h2 class="text-3xl font-bold text-cocoPrimary">More Than an App</h2>
+        <p class="mt-4 text-gray-600">
+          Cocooned is building a movement for accessible, stigma‑free parenting
+          support.
+        </p>
+
+        <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="rounded-3xl bg-white p-8 shadow-lg">
+            <h3 class="mb-3 text-xl font-semibold text-cocoPrimary">Social Impact</h3>
+            <p class="text-sm text-gray-600">
+              Free tier & multilingual resources ensure no family is left behind.
+            </p>
+          </div>
+          <div class="rounded-3xl bg
